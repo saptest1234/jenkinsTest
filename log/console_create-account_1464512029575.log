@@ -1,0 +1,26 @@
+2016-05-29 01:53:49,739 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Arguments:   -h neo.ondemand.com -a "xf5d82fba" -u i820059 -p ******** -n test
+2016-05-29 01:53:50,788 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Starting execution of command [create-account]
+2016-05-29 01:53:50,791 ERROR [main] com.sap.jpaas.infrastructure.console.version.VersionUtilities: There is no config file: C:\Users\I820059\Desktop\Git\.\..\sdk.version
+java.io.FileNotFoundException: C:\Users\I820059\Desktop\Git\.\..\sdk.version (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:146)
+	at com.sap.jpaas.infrastructure.console.version.VersionUtilities.readSDKVersionProperties(VersionUtilities.java:52)
+	at com.sap.jpaas.infrastructure.console.version.VersionUtilities.<clinit>(VersionUtilities.java:42)
+	at com.sap.jpaas.infrastructure.console.VersionValidityCheckerUtilities.performVersionValidityCheck(VersionValidityCheckerUtilities.java:95)
+	at com.sap.jpaas.infrastructure.console.command.UnsecuredRemoteCommand.initWithHostOnlyCheck(UnsecuredRemoteCommand.java:44)
+	at com.sap.jpaas.infrastructure.console.command.RemoteCommand.initWithNoPasswordCheck(RemoteCommand.java:46)
+	at com.sap.jpaas.infrastructure.console.command.RemoteCommand.init(RemoteCommand.java:41)
+	at com.sap.cloud.commercial.account.ops.commands.AccountOperationsAbstractCommand.init(AccountOperationsAbstractCommand.java:124)
+	at com.sap.cloud.commercial.account.ops.commands.CreateSiblingAccountsCommand.init(CreateSiblingAccountsCommand.java:93)
+	at com.sap.jpaas.infrastructure.console.CommandManager.run(CommandManager.java:171)
+	at com.sap.jpaas.infrastructure.console.CommandManager.run(CommandManager.java:144)
+	at com.sap.jpaas.infrastructure.console.ConsoleClient.executeCommand(ConsoleClient.java:231)
+	at com.sap.jpaas.infrastructure.console.ConsoleClient.run(ConsoleClient.java:177)
+	at com.sap.jpaas.infrastructure.console.ConsoleClient.main(ConsoleClient.java:74)
+2016-05-29 01:53:50,835 INFO  [pool-2-thread-1] com.sap.jpaas.infrastructure.console.PropertyFileProvider: Loaded properties file [C:\Users\I820059\AppData\Local\Temp\sdkcheck.neo.ondemand.com.unknown.tmp]
+2016-05-29 01:53:50,836 ERROR [pool-2-thread-1] com.sap.jpaas.infrastructure.console.ConsoleLogger: There was a problem obtaining version or runtime.status of your SDK and the status cannot be defined
+2016-05-29 01:53:50,837 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: There was a problem determining the SDK version and the status is UNDEFINED. Check the logs for more information.
+2016-05-29 01:53:50,840 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [create-account] init() finished for [52] ms
+2016-05-29 01:53:54,547 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [create-account] run() finished for [3707] ms
+2016-05-29 01:53:54,548 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [create-account] cleanup() finished for [0] ms
+2016-05-29 01:53:54,548 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [create-account] finished successfully for [3760] ms

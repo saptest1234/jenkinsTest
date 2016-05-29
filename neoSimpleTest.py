@@ -26,18 +26,19 @@ class neoSimpleTest(object):
 		self.certName = os.environ.get('AR_CERTIFICATE_NAME')
 		self.custDomain = os.environ.get('AR_CUSTOM_DOMAIN')
 		self.appURL = os.environ.get('AR_APPLICATION_URL')
+		print "this executes@!!!!@!@!@!@"
 
 	def executeNeoCommand(self,cmd):
 		"""	Creates subprocess to run neo command - returns output in line-delimited array"""
 		try:
 			return subprocess.check_output(cmd.split())
-					except subprocess.CalledProcessError as e: 
+		except subprocess.CalledProcessError as e: 
 			print e.output 
 			sys.exit(1)
 
 	def createOrcaAccount(self): 
 		cmd = "neo.bat create-account -h %s -a %s -u %s -p %s -n %s" % (self.host, self.account, self.username, self.password, self.displayName)
-		result = executeNeoCommand(cmd) 		
+		result = self.executeNeoCommand(cmd) 		
 		for line in result.splitlines():
 			match = re.search("Account\s+?'(\w+?)'\s+?.*?", line)
 			if match:
