@@ -89,4 +89,4 @@ class neoSimpleTest(object):
 		return executeNeoCommand(cmd)
 
 #print neoSimpleTest().createOrcaAccount()
-subprocess.check_output("ps aux".split())
+print subprocess.check_output("ps aux".split())
