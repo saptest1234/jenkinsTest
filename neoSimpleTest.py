@@ -88,4 +88,5 @@ class neoSimpleTest(object):
 		cmd = "neo.bat remove-custom-domain -h %s -a %s -u %s -p %s -e %s -l %s" % (self.host,self.account,self.username,self.password,self.custDomain,self.sslName)
 		return executeNeoCommand(cmd)
 
-print neoSimpleTest().createOrcaAccount()
+#print neoSimpleTest().createOrcaAccount()
+subprocess.check_output("ps aux".split())
