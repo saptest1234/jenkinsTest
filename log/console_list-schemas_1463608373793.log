@@ -1,0 +1,8 @@
+2016-05-18 14:52:53,938 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Arguments:   -a i820059trial -u i820059 -p ******** -h hanatrial.ondemand.com
+2016-05-18 14:52:54,931 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Starting execution of command [list-schemas]
+2016-05-18 14:52:54,975 INFO  [pool-2-thread-1] com.sap.jpaas.infrastructure.console.PropertyFileProvider: Loaded properties file [C:\Users\I820059\AppData\Local\Temp\sdkcheck.hanatrial.ondemand.com.2.83.21.tmp]
+2016-05-18 14:52:54,977 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [list-schemas] init() finished for [46] ms
+2016-05-18 14:52:56,130 INFO  [main] com.sap.core.tunnelcommands.framework.executor.CommandTunnelRequestExecutor: CommandTunnelRequestExecutor.executeRequest() called for command [list-schemas] (version: 0.52.0)
+2016-05-18 14:52:58,622 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [list-schemas] run() finished for [3645] ms
+2016-05-18 14:52:58,623 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [list-schemas] cleanup() finished for [0] ms
+2016-05-18 14:52:58,623 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [list-schemas] finished successfully for [3692] ms

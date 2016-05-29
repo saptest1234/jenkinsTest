@@ -1,0 +1,3 @@
+2016-05-26 12:30:11,868 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Arguments:   
+2016-05-26 12:30:12,836 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Starting execution of command [list-schemas]
+2016-05-26 12:30:12,836 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [list-schemas] cleanup() finished for [0] ms

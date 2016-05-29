@@ -1,0 +1,7 @@
+2016-05-24 10:25:51,363 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Arguments:   -h neo.ondemand.com -a xf5d82fba -u i820059 -p ******** -n tt
+2016-05-24 10:25:52,430 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Starting execution of command [create-account]
+2016-05-24 10:25:52,471 INFO  [pool-2-thread-1] com.sap.jpaas.infrastructure.console.PropertyFileProvider: Loaded properties file [C:\Users\I820059\AppData\Local\Temp\sdkcheck.neo.ondemand.com.2.83.21.tmp]
+2016-05-24 10:25:52,471 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [create-account] init() finished for [41] ms
+2016-05-24 10:25:56,827 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [create-account] run() finished for [4356] ms
+2016-05-24 10:25:56,827 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [create-account] cleanup() finished for [0] ms
+2016-05-24 10:25:56,827 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [create-account] finished successfully for [4397] ms

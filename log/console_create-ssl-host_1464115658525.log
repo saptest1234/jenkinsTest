@@ -1,0 +1,14 @@
+2016-05-24 11:47:38,697 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Arguments:   -h neo.ondemand.com -a xf5d82fba -u i820059 -p ********
+2016-05-24 11:47:39,739 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Starting execution of command [create-ssl-host]
+2016-05-24 11:47:39,786 INFO  [pool-2-thread-1] com.sap.jpaas.infrastructure.console.PropertyFileProvider: Loaded properties file [C:\Users\I820059\AppData\Local\Temp\sdkcheck.neo.ondemand.com.2.83.21.tmp]
+2016-05-24 11:47:39,786 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [create-ssl-host] init() finished for [47] ms
+2016-05-24 11:47:44,039 ERROR [main] com.sap.core.certificate.manager.cmd.client.CertificateManagerRestClient: Server reported error! Entity is: {"exceptionType":"com.sap.core.certificate.manager.commons.exception.QuotaExceededException","message":"Account [xf5d82fba] does not have remaining quota! Quota is [0], registered objects are [0]"}
+2016-05-24 11:47:44,070 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [create-ssl-host] cleanup() finished for [0] ms
+2016-05-24 11:47:44,070 FATAL [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: (!) ERROR: Account [xf5d82fba] does not have remaining quota! Quota is [0], registered objects are [0]
+com.sap.jpaas.infrastructure.console.exception.CommandException: Account [xf5d82fba] does not have remaining quota! Quota is [0], registered objects are [0]
+	at com.sap.core.certificate.manager.cmd.commands.CreateSslHostCommand.run(CreateSslHostCommand.java:76)
+	at com.sap.jpaas.infrastructure.console.CommandManager.run(CommandManager.java:183)
+	at com.sap.jpaas.infrastructure.console.CommandManager.run(CommandManager.java:144)
+	at com.sap.jpaas.infrastructure.console.ConsoleClient.executeCommand(ConsoleClient.java:231)
+	at com.sap.jpaas.infrastructure.console.ConsoleClient.run(ConsoleClient.java:177)
+	at com.sap.jpaas.infrastructure.console.ConsoleClient.main(ConsoleClient.java:74)

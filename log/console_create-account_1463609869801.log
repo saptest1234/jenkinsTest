@@ -1,0 +1,17 @@
+2016-05-18 15:17:49,958 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Arguments:   -a i820059sapdev -n test -u i820059 -h neo.ondemand.com
+2016-05-18 15:17:50,911 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Starting execution of command [create-account]
+2016-05-18 15:17:50,958 INFO  [pool-2-thread-1] com.sap.jpaas.infrastructure.console.PropertyFileProvider: Loaded properties file [C:\Users\I820059\AppData\Local\Temp\sdkcheck.neo.ondemand.com.2.83.21.tmp]
+2016-05-18 15:17:50,973 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [create-account] init() finished for [62] ms
+2016-05-18 15:17:59,401 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [create-account] cleanup() finished for [0] ms
+2016-05-18 15:17:59,401 FATAL [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: (!) ERROR: The provided account 'i820059sapdev' does not belong to any customer
+com.sap.jpaas.infrastructure.console.exception.FrontendException: The provided account 'i820059sapdev' does not belong to any customer
+	at com.sap.cloud.commercial.account.ops.commands.AccountOperationsAbstractCommand.handleErrorResponse(AccountOperationsAbstractCommand.java:223)
+	at com.sap.cloud.commercial.account.ops.commands.AccountOperationsAbstractCommand.handleResponse(AccountOperationsAbstractCommand.java:265)
+	at com.sap.cloud.commercial.account.ops.commands.CreateSiblingAccountsCommand.executeCreateAccountWithOptionalConfiguirationsClone(CreateSiblingAccountsCommand.java:233)
+	at com.sap.cloud.commercial.account.ops.commands.CreateSiblingAccountsCommand.executeCommand(CreateSiblingAccountsCommand.java:128)
+	at com.sap.cloud.commercial.account.ops.commands.AccountOperationsAbstractCommand.run(AccountOperationsAbstractCommand.java:153)
+	at com.sap.jpaas.infrastructure.console.CommandManager.run(CommandManager.java:183)
+	at com.sap.jpaas.infrastructure.console.CommandManager.run(CommandManager.java:144)
+	at com.sap.jpaas.infrastructure.console.ConsoleClient.executeCommand(ConsoleClient.java:231)
+	at com.sap.jpaas.infrastructure.console.ConsoleClient.run(ConsoleClient.java:177)
+	at com.sap.jpaas.infrastructure.console.ConsoleClient.main(ConsoleClient.java:74)

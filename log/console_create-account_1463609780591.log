@@ -1,0 +1,19 @@
+2016-05-18 15:16:20,731 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Arguments:   -a i820059sapdev -n test -u i820059 -h neo.ondemand.com
+2016-05-18 15:16:21,700 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Starting execution of command [create-account]
+2016-05-18 15:16:21,778 INFO  [pool-2-thread-1] com.sap.jpaas.infrastructure.console.PropertyFileProvider: Loaded properties file [C:\Users\I820059\AppData\Local\Temp\sdkcheck.neo.ondemand.com.2.83.21.tmp]
+2016-05-18 15:16:21,778 INFO  [pool-2-thread-1] com.sap.jpaas.infrastructure.console.ConsoleLogger: Currently running SDK version validity check for user SDK version: 2.83.21, landscape: neo.ondemand.com and runtime: neo-javaee6-wp
+2016-05-18 15:16:23,091 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Your SDK is supported but could be updated to 2.85.7
+2016-05-18 15:16:23,091 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [create-account] init() finished for [1391] ms
+2016-05-18 15:16:30,843 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [create-account] cleanup() finished for [0] ms
+2016-05-18 15:16:30,858 FATAL [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: (!) ERROR: The provided account 'i820059sapdev' does not belong to any customer
+com.sap.jpaas.infrastructure.console.exception.FrontendException: The provided account 'i820059sapdev' does not belong to any customer
+	at com.sap.cloud.commercial.account.ops.commands.AccountOperationsAbstractCommand.handleErrorResponse(AccountOperationsAbstractCommand.java:223)
+	at com.sap.cloud.commercial.account.ops.commands.AccountOperationsAbstractCommand.handleResponse(AccountOperationsAbstractCommand.java:265)
+	at com.sap.cloud.commercial.account.ops.commands.CreateSiblingAccountsCommand.executeCreateAccountWithOptionalConfiguirationsClone(CreateSiblingAccountsCommand.java:233)
+	at com.sap.cloud.commercial.account.ops.commands.CreateSiblingAccountsCommand.executeCommand(CreateSiblingAccountsCommand.java:128)
+	at com.sap.cloud.commercial.account.ops.commands.AccountOperationsAbstractCommand.run(AccountOperationsAbstractCommand.java:153)
+	at com.sap.jpaas.infrastructure.console.CommandManager.run(CommandManager.java:183)
+	at com.sap.jpaas.infrastructure.console.CommandManager.run(CommandManager.java:144)
+	at com.sap.jpaas.infrastructure.console.ConsoleClient.executeCommand(ConsoleClient.java:231)
+	at com.sap.jpaas.infrastructure.console.ConsoleClient.run(ConsoleClient.java:177)
+	at com.sap.jpaas.infrastructure.console.ConsoleClient.main(ConsoleClient.java:74)

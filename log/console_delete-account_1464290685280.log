@@ -1,0 +1,1 @@
+2016-05-26 12:24:45,443 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Arguments:   -h us1.hana.ondemand.com -a bb0580637 -u i820059s -p ******** -n everythingIsWonderful

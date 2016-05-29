@@ -1,0 +1,8 @@
+2016-05-18 15:29:39,528 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Arguments:   -a i820059sapdev -u i820059 -p ******** -h neo.ondemand.com
+2016-05-18 15:29:40,580 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Starting execution of command [list-schemas]
+2016-05-18 15:29:40,612 INFO  [pool-2-thread-1] com.sap.jpaas.infrastructure.console.PropertyFileProvider: Loaded properties file [C:\Users\I820059\AppData\Local\Temp\sdkcheck.neo.ondemand.com.2.83.21.tmp]
+2016-05-18 15:29:40,612 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [list-schemas] init() finished for [32] ms
+2016-05-18 15:29:41,758 INFO  [main] com.sap.core.tunnelcommands.framework.executor.CommandTunnelRequestExecutor: CommandTunnelRequestExecutor.executeRequest() called for command [list-schemas] (version: 0.52.0)
+2016-05-18 15:29:44,195 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [list-schemas] run() finished for [3583] ms
+2016-05-18 15:29:44,195 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [list-schemas] cleanup() finished for [0] ms
+2016-05-18 15:29:44,195 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [list-schemas] finished successfully for [3615] ms

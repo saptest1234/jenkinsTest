@@ -1,0 +1,10 @@
+2016-05-24 10:27:28,619 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Arguments:   -a i820059trial -u i820059 -p ******** -h hanatrial.ondemand.com
+2016-05-24 10:27:29,646 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Starting execution of command [list-schemas]
+2016-05-24 10:27:29,687 INFO  [pool-2-thread-1] com.sap.jpaas.infrastructure.console.PropertyFileProvider: Loaded properties file [C:\Users\I820059\AppData\Local\Temp\sdkcheck.hanatrial.ondemand.com.2.83.21.tmp]
+2016-05-24 10:27:29,687 INFO  [pool-2-thread-1] com.sap.jpaas.infrastructure.console.ConsoleLogger: Currently running SDK version validity check for user SDK version: 2.83.21, landscape: hanatrial.ondemand.com and runtime: neo-javaee6-wp
+2016-05-24 10:29:27,460 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Your SDK is supported but could be updated to 2.85.7
+2016-05-24 10:29:27,460 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [list-schemas] init() finished for [117814] ms
+2016-05-24 10:29:28,205 INFO  [main] com.sap.core.tunnelcommands.framework.executor.CommandTunnelRequestExecutor: CommandTunnelRequestExecutor.executeRequest() called for command [list-schemas] (version: 0.52.0)
+2016-05-24 10:29:31,735 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [list-schemas] run() finished for [4275] ms
+2016-05-24 10:29:31,735 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [list-schemas] cleanup() finished for [0] ms
+2016-05-24 10:29:31,735 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [list-schemas] finished successfully for [122089] ms

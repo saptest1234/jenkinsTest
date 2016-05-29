@@ -1,0 +1,14 @@
+2016-05-24 11:49:05,463 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Arguments:   -h neo.ondemand.com -a i820059sapdev -u i820059 -p ********
+2016-05-24 11:49:06,449 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Starting execution of command [create-ssl-host]
+2016-05-24 11:49:06,483 INFO  [pool-2-thread-1] com.sap.jpaas.infrastructure.console.PropertyFileProvider: Loaded properties file [C:\Users\I820059\AppData\Local\Temp\sdkcheck.neo.ondemand.com.2.83.21.tmp]
+2016-05-24 11:49:06,483 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [create-ssl-host] init() finished for [34] ms
+2016-05-24 11:49:10,296 ERROR [main] com.sap.core.certificate.manager.cmd.client.CertificateManagerRestClient: Server reported error! Entity is: {"exceptionType":"com.sap.core.certificate.manager.commons.exception.NoQuotaDefinedException","message":"Account [i820059sapdev] does not have any global quota for custom domains defined"}
+2016-05-24 11:49:10,312 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [create-ssl-host] cleanup() finished for [0] ms
+2016-05-24 11:49:10,312 FATAL [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: (!) ERROR: Account 'i820059sapdev' does not have any global quotas defined
+com.sap.jpaas.infrastructure.console.exception.CommandException: Account 'i820059sapdev' does not have any global quotas defined
+	at com.sap.core.certificate.manager.cmd.commands.CreateSslHostCommand.run(CreateSslHostCommand.java:79)
+	at com.sap.jpaas.infrastructure.console.CommandManager.run(CommandManager.java:183)
+	at com.sap.jpaas.infrastructure.console.CommandManager.run(CommandManager.java:144)
+	at com.sap.jpaas.infrastructure.console.ConsoleClient.executeCommand(ConsoleClient.java:231)
+	at com.sap.jpaas.infrastructure.console.ConsoleClient.run(ConsoleClient.java:177)
+	at com.sap.jpaas.infrastructure.console.ConsoleClient.main(ConsoleClient.java:74)

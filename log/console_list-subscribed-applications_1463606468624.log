@@ -1,0 +1,30 @@
+2016-05-18 14:21:08,781 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Arguments:   --account i820059trial --user i820059 --host haantrial.ondemand.com --password ********
+2016-05-18 14:21:09,850 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Starting execution of command [list-subscribed-applications]
+2016-05-18 14:21:09,927 INFO  [pool-2-thread-1] com.sap.jpaas.infrastructure.console.PropertyFileProvider: Loaded properties file [C:\Users\I820059\AppData\Local\Temp\sdkcheck.haantrial.ondemand.com.2.83.21.tmp]
+2016-05-18 14:21:09,928 INFO  [pool-2-thread-1] com.sap.jpaas.infrastructure.console.ConsoleLogger: Currently running SDK version validity check for user SDK version: 2.83.21, landscape: haantrial.ondemand.com and runtime: neo-javaee6-wp
+2016-05-18 14:21:12,043 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Your SDK is supported but could be updated to 2.84.11
+2016-05-18 14:21:12,043 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [list-subscribed-applications] init() finished for [2193] ms
+2016-05-18 14:21:13,042 INFO  [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: Command [list-subscribed-applications] cleanup() finished for [0] ms
+2016-05-18 14:21:13,049 FATAL [main] com.sap.jpaas.infrastructure.console.ConsoleLogger: (!) ERROR; Error during validation of host: https://services.haantrial.ondemand.com/services/v1/instances/i820059trial/subscriptions/v1/
+com.sap.jpaas.infrastructure.console.exception.ValidationException
+	at com.sap.core.account.commands.util.HttpClientProvider.createClientWithBasicAuthentication(HttpClientProvider.java:62)
+	at com.sap.core.account.commands.util.HttpClientProvider.createClientWithBasicAuth(HttpClientProvider.java:52)
+	at com.sap.core.account.commands.util.HttpClientProvider.createClientWithBasicAuthentication(HttpClientProvider.java:47)
+	at com.sap.core.account.commands.util.HttpClientProvider.createClientWithBasicAuth(HttpClientProvider.java:40)
+	at com.sap.core.account.commands.util.CommandTunnelRequestExecutor.getClientWithBasicAuth(CommandTunnelRequestExecutor.java:141)
+	at com.sap.core.account.commands.util.CommandTunnelRequestExecutor.executeRequest(CommandTunnelRequestExecutor.java:50)
+	at com.sap.core.account.commands.subscriptions.ListSubscribedApplications.run(ListSubscribedApplications.java:62)
+	at com.sap.jpaas.infrastructure.console.CommandManager.run(CommandManager.java:183)
+	at com.sap.jpaas.infrastructure.console.CommandManager.run(CommandManager.java:144)
+	at com.sap.jpaas.infrastructure.console.ConsoleClient.executeCommand(ConsoleClient.java:231)
+	at com.sap.jpaas.infrastructure.console.ConsoleClient.run(ConsoleClient.java:177)
+	at com.sap.jpaas.infrastructure.console.ConsoleClient.main(ConsoleClient.java:74)
+Caused by: com.sap.core.utils.infrastructure.validation.HostValidationException: org.apache.http.HttpException: Error during validation of host: https://services.haantrial.ondemand.com/services/v1/instances/i820059trial/subscriptions/v1/
+	at com.sap.core.utils.infrastructure.validation.LandscapeHostValidator.getHttpClient(LandscapeHostValidator.java:340)
+	at com.sap.core.account.commands.util.HttpClientProvider.createClientWithBasicAuthentication(HttpClientProvider.java:59)
+	... 11 more
+Caused by: org.apache.http.HttpException: Error during validation of host: https://services.haantrial.ondemand.com/services/v1/instances/i820059trial/subscriptions/v1/
+	at com.sap.core.utils.infrastructure.validation.LandscapeHostValidator.validateHttpResponseStatus(LandscapeHostValidator.java:422)
+	at com.sap.core.utils.infrastructure.validation.LandscapeHostValidator.validateHttpResponseStatus(LandscapeHostValidator.java:384)
+	at com.sap.core.utils.infrastructure.validation.LandscapeHostValidator.getHttpClient(LandscapeHostValidator.java:301)
+	... 12 more
