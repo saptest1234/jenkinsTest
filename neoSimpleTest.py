@@ -37,7 +37,7 @@ class neoSimpleTest(object):
 			sys.exit(1)
 
 	def createOrcaAccount(self): 
-		cmd = "neo.bat create-account -h %s -a %s -u %s -p %s -n %s" % (self.host, self.account, self.username, self.password, self.displayName)
+		cmd = "neo.sh create-account -h %s -a %s -u %s -p %s -n %s" % (self.host, self.account, self.username, self.password, self.displayName)
 		result = self.executeNeoCommand(cmd) 		
 		for line in result.splitlines():
 			match = re.search("Account\s+?'(\w+?)'\s+?.*?", line)
@@ -46,7 +46,7 @@ class neoSimpleTest(object):
 		return result
 
 	def deleteOrcaAcocunt(self):
-		cmd = "neo.bat delete-account -h %s -a %s -u %s -p %s" % (self.host, self.account, self.username, self.password)
+		cmd = "neo.sh delete-account -h %s -a %s -u %s -p %s" % (self.host, self.account, self.username, self.password)
 		return executeNeoCommand(cmd)
 
 	def subscribeToApp(self): 
@@ -88,5 +88,4 @@ class neoSimpleTest(object):
 		cmd = "neo.bat remove-custom-domain -h %s -a %s -u %s -p %s -e %s -l %s" % (self.host,self.account,self.username,self.password,self.custDomain,self.sslName)
 		return executeNeoCommand(cmd)
 
-#print neoSimpleTest().createOrcaAccount()
-print subprocess.check_output("ps aux".split())
+print neoSimpleTest().createOrcaAccount()
