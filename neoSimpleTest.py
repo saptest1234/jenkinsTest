@@ -32,7 +32,7 @@ class neoSimpleTest(object):
 		"""	Creates subprocess to run neo command - returns output in line-delimited array"""
 		print cmd
 		try:
-			return subprocess.check_output(cmd,shell=True)
+			return subprocess.check_output(cmd.split())
 		except subprocess.CalledProcessError as e: 
 			print e.output 
 			sys.exit(1)
