@@ -30,7 +30,7 @@ class neoSimpleTest(object):
 
 	def executeNeoCommand(self,cmd):
 		"""	Creates subprocess to run neo command - returns output in line-delimited array"""
-		print cmd.split()
+		print cmd
 		try:
 			return subprocess.check_output(cmd,shell=True)
 		except subprocess.CalledProcessError as e: 
@@ -38,7 +38,7 @@ class neoSimpleTest(object):
 			sys.exit(1)
 
 	def createOrcaAccount(self): 
-		cmd = "neo create-account -h %s -a %s -u %s -p %s -n %s" % (self.host, self.account, self.username, self.password, self.displayName)
+		cmd = "./neo.sh create-account -h %s -a %s -u %s -p %s -n %s" % (self.host, self.account, self.username, self.password, self.displayName)
 		result = self.executeNeoCommand(cmd) 		
 		for line in result.splitlines():
 			match = re.search("Account\s+?'(\w+?)'\s+?.*?", line)
