@@ -37,7 +37,7 @@ class neoSimpleTest(object):
 			sys.exit(1)
 
 	def createOrcaAccount(self): 
-		cmd = "neo.sh create-account -h %s -a %s -u %s -p %s -n %s" % (self.host, self.account, self.username, self.password, self.displayName)
+		cmd = "neo create-account -h %s -a %s -u %s -p %s -n %s" % (self.host, self.account, self.username, self.password, self.displayName)
 		result = self.executeNeoCommand(cmd) 		
 		for line in result.splitlines():
 			match = re.search("Account\s+?'(\w+?)'\s+?.*?", line)
