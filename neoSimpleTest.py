@@ -89,4 +89,4 @@ class neoSimpleTest(object):
 		cmd = "neo.bat remove-custom-domain -h %s -a %s -u %s -p %s -e %s -l %s" % (self.host,self.account,self.username,self.password,self.custDomain,self.sslName)
 		return executeNeoCommand(cmd)
 
-print subprocess.check_output("neo")
+print subprocess.check_output("neo",shell=True)
